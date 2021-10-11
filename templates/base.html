@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block css-banner %}
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    {% endblock css-banner %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    {% include "snippets/styles.html" %}
+
+</head>
+<body>
+{%include "snippets/navbar.html"%} 
+
+    <div class="jumbotron m-0">
+        <div class="container ">
+            {% block header %}
+            {% endblock header %}
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <!--BLOCK DI SETTING DI INDEX DAN AKAN BISA DI OVERLOAD (TIMPA) DISANA-->
+        <div id="body1" class="container bg-dark text-white shadow" style="margin-top: -100px;" >
+            {% block content1 %}
+            {% endblock content1 %}
+
+            {% block content2 %}
+            {% endblock content2 %}
+        
+            {% block content3 %}
+            {% endblock content3 %}
+        </div>
+    </div>
+
+    </body>
+    {% include 'snippets/script.html' %}
+</html>

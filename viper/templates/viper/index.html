@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%block header%}
+    <h1 class="display-4 text-success">{{heading}}</h1>
+    <p class="lead text-success">{{subheading}}</p>
+{%endblock header%}
+
+{% block css-banner %}
+    <link rel="stylesheet" href="{% static "viper/css/styles.css" %}"> 
+{% endblock css-banner %}
+
+{% block content1 %}
+    <div class="row" style="height: max-content; display: block;">
+        <h1 class="m-2 display-6 text-center"> DETAILS </h1>
+        <img style="display: block; height: auto; width: max-content;" src="{%static "viper/img/viper.jpg"%}" alt="">
+    </div>
+{%endblock content1%}
+
+{% block content2 %}
+    <div class="row" style="height: max-content; display: block;">
+        <h1 class="display-6 text-center"> SKILLS </h1>
+        {% include "viper/snippets/viperskills.html"%}
+    </div>
+
+{% endblock content2 %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css-banner %}
+    <link rel="stylesheet" href="{% static "about/css/styles.css" %}">
+{% endblock css-banner %}
+{% block header %}
+    <h1 class="display-7 text-white text-center">{{heading}}</h1>
+    <p class="lead text-white text-center">{{subheading}}</p>
+{% endblock header %}
+{% block content1 %}
+    <div class="row" style="height: 300px;">
+        <h1 class="display-4">About Us</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos itaque quam ipsam tempore architecto ex facilis adipisci, minima voluptas tempora dicta nam corporis odit cum vero reiciendis doloribus ea odio!</p>
+    </div>            
+{% endblock content1 %}
+{% block content2 %}
+    <div class="row" style="height: 300px;">
+        <h1 class="display-6">What Next?</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo praesentium ratione dolorum velit consequuntur laboriosam eum odit doloremque, fugiat atque aspernatur architecto nostrum ex ut dolore voluptas labore, ipsam exercitationem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit dicta, suscipit perspiciatis tempora, optio ab, nulla praesentium atque possimus quae quaerat quos nostrum non repellat pariatur aliquam mollitia rem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos itaque quam ipsam tempore architecto ex facilis adipisci, minima voluptas tempora dicta nam corporis odit cum vero reiciendis doloribus ea odio!</p>
+    </div>            
+{% endblock content2 %}
+{% block content3 %}
+    <div class="row" style="height: 300px;">
+        <h1 class="display-6">Support Us</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo praesentium ratione dolorum velit consequuntur laboriosam eum odit doloremque, fugiat atque aspernatur architecto nostrum ex ut dolore voluptas labore, ipsam exercitationem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit dicta, suscipit perspiciatis tempora, optio ab, nulla praesentium atque possimus quae quaerat quos nostrum non repellat pariatur aliquam mollitia rem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos itaque quam ipsam tempore architecto ex facilis adipisci, minima voluptas tempora dicta nam corporis odit cum vero reiciendis doloribus ea odio!</p>
+    </div>            
+{% endblock content3 %}

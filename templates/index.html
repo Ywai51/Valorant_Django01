@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header %}
+    <h1 class="display-4">{{heading}}</h1>
+    <p class="lead">{{subheading}}</p>
+{% endblock header %}
+{% block content1%}
+    <div class="row" style="height: max-content; display: block;">
+        <hr class="bg-danger">
+        <h1 class="m-4 display-4">
+            AGENT-001 \ Jett
+        </h1>
+    <img style="margin: auto; border-radius: 3%; display: block; height: auto; width: max-content;" src="{% static "img/jett.jpeg" %}" alt="Jett-img">
+    </div>
+{%endblock content1%}
+{% block content2 %}
+    <div class="row" style="height: max-content; display: block;">
+        <h1 class="m-4 display-4">
+            AGENT-002 \ Sova
+        </h1>
+    <img style="margin: auto; border-radius: 3%; display: block; height: auto; width: max-content;" src="{% static "img/sova.png" %}" alt="Jett-img">
+    </div>
+{% endblock content2 %}
+{% block content3 %}
+    <div class="row" style="height: max-content; display: block;">
+        <h1 class="m-4 display-4">
+            AGENT-003 \ Omen
+        </h1>
+    <img style="margin: auto; border-radius: 3%; display: block; height: 90%; width: max-content;" src="{% static "img/omen.jpg" %}" alt="Jett-img">
+    </div>
+{% endblock content3 %}
